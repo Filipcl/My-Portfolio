@@ -1,8 +1,14 @@
 //Widescreens
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 //Desktop & Laptop
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 // Tablets
 @include mediaMd {
@@ -34,7 +40,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url(../components/img/goran-ivos-246271-unsplash.jpg);
+      background: url(../img/Filip-Larsen-small.jpg);
       width: 150px;
       height: 150px;
     }
@@ -50,11 +56,18 @@
 
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 //Smartphone
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
+  }
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
