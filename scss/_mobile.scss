@@ -1,13 +1,14 @@
 //Widescreens
 @include mediaXl {
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 //Desktop & Laptop
 @include mediaLg {
   .projects {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4.5rem;
   }
 }
 // Tablets
@@ -56,18 +57,93 @@
 
     grid-template-columns: 1fr;
   }
-
+  //re-arrangeing div's
   .projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    .item :nth-child(1) {
+      grid-area: column-1;
+    }
+    .item:nth-child(2) {
+      grid-area: column-2;
+    }
+    .item:nth-child(3) {
+      grid-area: column-3;
+    }
+    .item:nth-child(4) {
+      grid-area: column-4;
+    }
+    .item:nth-child(5) {
+      grid-area: column-5;
+    }
+    .item:nth-child(6) {
+      grid-area: column-6;
+    }
+    .item:nth-child(7) {
+      grid-area: column-7;
+    }
+    .item:nth-child(8) {
+      grid-area: column-8;
+    }
+    .item:nth-child(9) {
+      grid-area: column-9;
+    }
+    .item:nth-child(10) {
+      grid-area: column-10;
+    }
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      " column-1" "column-2"
+      " column-4" " column-3"
+      " column-5" " column-6"
+      " column-8" " column-7"
+      " column-9" " column-10";
   }
 }
 
 //Smartphone
+
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
   }
+  //re-arrangeing div's
   .projects {
+    .item :nth-child(1) {
+      grid-area: column-1;
+    }
+    .item:nth-child(2) {
+      grid-area: column-2;
+    }
+    .item:nth-child(3) {
+      grid-area: column-3;
+    }
+    .item:nth-child(4) {
+      grid-area: column-4;
+    }
+    .item:nth-child(5) {
+      grid-area: column-5;
+    }
+    .item:nth-child(6) {
+      grid-area: column-6;
+    }
+    .item:nth-child(7) {
+      grid-area: column-7;
+    }
+    .item:nth-child(8) {
+      grid-area: column-8;
+    }
+    .item:nth-child(9) {
+      grid-area: column-9;
+    }
+    .item:nth-child(10) {
+      grid-area: column-10;
+    }
     grid-template-columns: 1fr;
+    grid-template-areas:
+      " column-1" "column-2"
+      " column-4" " column-3"
+      " column-5" " column-6"
+      " column-8" " column-7"
+      " column-9" " column-10";
   }
 }
