@@ -80,7 +80,7 @@ main {
       padding: 0.4rem;
       &:hover {
         color: $secondary-color;
-        @include easeOut();
+        @include easeOut;
       }
     }
   }
@@ -122,17 +122,19 @@ main {
 
   .job {
     background: lighten($primary-color, 5);
-    padding: 0.5rem;
+    padding: 0,5rem;
     border-bottom: $secondary-color 5px solid;
   }
 }
 
 // Projects
 .projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
   img {
     width: 100%;
     border: 3px #fff solid;
