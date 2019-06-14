@@ -17,7 +17,7 @@
     background: transparent;
   }
   #scroll::-webkit-scrollbar-thumb {
-    background: darken($primary-color, 40);
+    background: darken($primary-color, 0);
     border-radius: 20px;
   }
   #scroll::-webkit-scrollbar-track {
@@ -54,7 +54,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: #F8F9F9;
   text-decoration: none;
 }
 
@@ -144,7 +144,7 @@ main {
 
   img {
     width: 100%;
-    border: 3px #fff solid;
+    border: 3px #F8F9F9 solid;
 
     &:hover {
       opacity: 0.5;
@@ -165,7 +165,7 @@ main {
 
   div {
     font-size: 2rem;
-    border: 2px #fff solid;
+    border: 2px #0D9EDF solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -197,12 +197,12 @@ main {
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 40);
-  color: #fff;
+  color: #F8F9F9;
 }
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 40);
-  color: #fff;
+  color: #F8F9F9;
 }
 
 #main-footer {
