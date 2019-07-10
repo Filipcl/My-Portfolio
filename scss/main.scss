@@ -87,67 +87,58 @@ main {
     }
   }
 }
-
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  margin-top: 35px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3"
-    "job4 job5 job6";
-  grid-t-columns: repeat(1, 1fr);
-  .bio-image {
-    grid-area: bioimage;
-    margin: auto;
+//jobs 
+.about-info{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  
+  .bio-image{
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: solid 2px $secondary-color;
+    margin-top: 1rem;
   }
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
-  .job-container{
-    grid-template-areas: 
-    "job1 job2 job3"
-    "job4 job5 job6"
-  }
-  .job1 {
-    grid-area: job1;
-  }
-  .job2 {
-    grid-area: job2;
-  }
-  .job3 {
-    grid-area: job3;
-  }
-
-  .job {
-    background: lighten($primary-color, 2);
-    padding: 1rem;
-    border-bottom: $secondary-color 5px solid;
+  .bio{
+    width: 60%;
+    margin-left: 1rem;
+    align-self: center; 
+    font-weight: 400;
   }
 }
+
+
+.container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 2rem;  
+
+  .item{
+    width: 30%;
+    height: 30%;
+    margin-top: 1rem;
+    border-bottom: solid 2px red;
+  }
+}
+
 
 // Projects
 .projects {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   margin-top: 1rem;  
 
   .item{
-    width: 50%;
-    height: 50%;
+    width: 33%;
+    height: 33%;
     align-self: flex-start;
     margin-top: 1rem
   }
-
   img {
     width: 100%;
-    border: 3px #E3E3E3 solid;
+    border: solid 3px rgba(lighten($primary-color, 2), 0.5);
 
     &:hover {
       opacity: 0.5;
@@ -155,7 +146,7 @@ main {
       @include easeOut;
     }
   }
-}
+  }
 
 //Contact Page
 

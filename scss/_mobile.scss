@@ -26,6 +26,14 @@
       align-self: center;
     }
   }
+  .about-info{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .bio{
+      width: 100%;
+    }
+  }
 }
 // Tablets
 @include mediaMd {
@@ -63,17 +71,23 @@
     }
   }
 
-
-  .about-info {
-    grid-template-areas:
-      "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
-
-    grid-template-columns: 1fr;
+  .about-info{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .bio{
+      width: 100%;
+    }
   }
+
+
+  .container {
+    .item{
+      align-self: center;
+      width: 100%;
+      height: 100%;
+  }
+}
   .projects {
     .item{
       align-self: center;
