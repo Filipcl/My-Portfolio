@@ -92,7 +92,6 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  
   .bio-image{
     border-radius: 50%;
     border: solid 2px $secondary-color;
@@ -110,14 +109,15 @@ main {
 .container{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-between;  
   margin-top: 2rem;  
 
   .item{
-    width: 30%;
-    height: 30%;
     margin-top: 1rem;
     border-bottom: solid 2px red;
+    flex: 1 1 0;
+    width: 0;
+    margin: 1rem;
   }
 }
 
@@ -173,6 +173,12 @@ main {
       }
     }
   }
+}
+
+#main-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 // Button styles

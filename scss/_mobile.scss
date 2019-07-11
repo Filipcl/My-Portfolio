@@ -31,7 +31,7 @@
     width: 100%;
     height: 100%;
     .bio{
-      width: 100%;
+      width: 50%;
     }
   }
 }
@@ -83,6 +83,7 @@
 
   .container {
     .item{
+      flex: 100%;
       align-self: center;
       width: 100%;
       height: 100%;
