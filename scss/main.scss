@@ -45,12 +45,11 @@ h3 {
   }
   &.subtitle {
     margin-bottom: 2rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 
 a {
-  color: #F8F9F9;
+  color: $primary-color;
   text-decoration: none;
 }
 
@@ -102,6 +101,10 @@ main {
     margin-left: 1rem;
     align-self: center; 
     font-weight: 400;
+
+    #linkTolinkIn{
+      color: $secondary-color;
+    }
   }
 }
 
@@ -114,7 +117,7 @@ main {
 
   .item{
     margin-top: 1rem;
-    border-bottom: solid 2px red;
+    border-bottom: solid 2px $secondary-color;
     flex: 1 1 0;
     width: 0;
     margin: 1rem;
@@ -146,6 +149,7 @@ main {
       @include easeOut;
     }
   }
+  
   }
 
 //Contact Page
@@ -159,7 +163,7 @@ main {
 
   div {
     font-size: 2rem;
-    border: 2px #E3E3E3 solid;
+    border: 2px $primary-color solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -191,25 +195,27 @@ main {
   &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
+    @include easeOut;
   }
+
 }
+
 
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 40);
-  color: #F8F9F9;
+  color: $primary-color;
 }
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 40);
-  color: #F8F9F9;
+  color: $secondary-color;
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
+  background: $secondary-color;
+  color: set-text-color($secondary-color);
   height: 60px;
 }
 

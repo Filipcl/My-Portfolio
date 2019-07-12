@@ -1,5 +1,5 @@
 $primary-color: #F6F6F8;
-$secondary-color: #C60021;
+$secondary-color: #605D58;
 $show-home-image: true;
 $home-image: url(../img/goran-ivos-246271-unsplash.jpg);
 $background-opacity: 0.9;
@@ -33,7 +33,7 @@ $background-opacity: 0.9;
   @if (lightness($color) > 40) {
     @return #000;
   } @else {
-    @return #C3C3C3;
+    @return $primary-color;
   }
 }
 
