@@ -64,9 +64,8 @@ header {
 }
 
 main {
-  padding: 4rem;
+  padding: 5rem;
   //Sticky footer
-  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -79,18 +78,50 @@ main {
     }
   }
 
+
+  .arrow {
+    font-size: 3rem;
+    color: $secondary-color;
+    margin-top: 18rem;
+    display: flex;
+    justify-content: center;
+
+  }
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+
+
   &#home {
-    overflow: hidden;
     h1 {
       margin-top: 20vh;
     }
   }
 }
+
 //jobs 
+#about{
+  background-color: $primary-color;
+  padding: 15rem 15rem 3rem 15rem;
+}
 .about-info{
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+
   .bio-image{
     border-radius: 50%;
     border: solid 2px $secondary-color;
@@ -102,25 +133,26 @@ main {
     align-self: center; 
     font-weight: 400;
 
-    #linkTolinkIn{
+    #linkTolinkedIn{
       color: $secondary-color;
     }
   }
 }
 
-
 .container{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;  
+  justify-content: space-evenly;
   margin-top: 2rem;  
 
   .item{
-    margin-top: 1rem;
+    width: 40%;
+    padding-top: 2rem;
+    padding: 2rem;
     border-bottom: solid 2px $secondary-color;
-    flex: 1 1 0;
-    width: 0;
-    margin: 1rem;
+    .card-title{
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -137,7 +169,15 @@ main {
     width: 33%;
     height: 33%;
     align-self: flex-start;
-    margin-top: 1rem
+    margin-top: 1rem;
+    
+    .project-title{
+      color: #000;
+      &:hover{
+      text-decoration: underline;
+      @include easeOut;
+      }     
+    }
   }
   img {
     width: 100%;
@@ -159,8 +199,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem;
-
+  margin-top: 10rem;
+  text-decoration: underline;
   div {
     font-size: 2rem;
     border: 2px $primary-color solid;

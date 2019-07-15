@@ -15,6 +15,7 @@
 }
 //Desktop & Laptop
 @include mediaLg {
+
   .projects {
     .item#selected{
       align-self: flex-end;
@@ -34,6 +35,9 @@
       width: 50%;
     }
   }
+  #about{
+    padding: 10rem;
+  }
 }
 // Tablets
 @include mediaMd {
@@ -45,6 +49,9 @@
       line-height: 1;
       margin-bottom: 1rem;
     }
+  }
+  #about{
+    padding: 5rem;
   }
   ul.menu-nav,
   div.menu-branding {
@@ -109,7 +116,7 @@
 @include mediaSm {
 
   main#home h1 {
-    margin-top: 10vh;
+    margin-top: 12vh;
     
   }
 
@@ -122,5 +129,8 @@
       width: 100%;
       height: 100%;
   }
+}
+#about{
+  padding: 2rem;
 }
 }
