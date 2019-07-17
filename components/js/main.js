@@ -4,11 +4,13 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
+const arrow = document.getElementById("arrow-down");
 
 // Set Initial stat of menu
 let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
+disappear();
 
 function toggleMenu() {
   if (!showMenu) {
@@ -30,7 +32,13 @@ function toggleMenu() {
   }
 }
 
+/*function disappear(){
+const tall = 6;
 
-$(window).scroll(function(){
-  $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); 
-});
+  if(tall < 5){
+    arrow.style.visibility = 'hidden';  
+  }else{
+  arrow.style.visibility = 'visible'; 
+  }
+
+}*/

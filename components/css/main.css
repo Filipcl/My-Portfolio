@@ -109,24 +109,10 @@
 
 body {
   background: #F6F6F8;
-  color: #000;
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
-  body#bg-img {
-    background: url(../img/goran-ivos-246271-unsplash.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(246, 246, 248, 0.9); }
 
 h1,
 h2,
@@ -155,7 +141,8 @@ header {
   color: #605D58; }
 
 main {
-  padding: 5rem; }
+  padding: 5rem;
+  height: 100vh; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -166,9 +153,11 @@ main {
   main .arrow {
     font-size: 3rem;
     color: #605D58;
-    margin-top: 18rem;
-    display: flex;
-    justify-content: center; }
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    padding-bottom: 1rem; }
   main .bounce {
     animation: bounce 2s infinite; }
 
@@ -179,11 +168,24 @@ main {
     transform: translateY(-30px); }
   60% {
     transform: translateY(-15px); } }
+  main#home#home {
+    background: url(../img/goran-ivos-246271-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.9; }
+    main#home#home:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(246, 246, 248, 0.9); }
   main#home h1 {
     margin-top: 20vh; }
 
 #about {
-  background-color: #F6F6F8;
   padding: 15rem 15rem 3rem 15rem; }
 
 .about-info {
@@ -259,11 +261,6 @@ main {
       .boxes div:hover span {
         color: #F6F6F8; }
 
-#main-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -281,36 +278,28 @@ main {
 .btn-light {
   color: #605D58; }
 
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #605D58;
-  color: #F6F6F8;
-  height: 60px; }
-
 @media screen and (min-width: 1171px) {
   .projects .item#selected {
     align-self: flex-end;
     margin-top: 1rem; }
   .projects #content {
+    width: 50%;
+    height: 50%;
+    align-self: center; }
+  .projects #work-img {
     width: 40%;
-    height: 40%;
-    align-self: center; } }
+    height: 40%; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects .item#selected {
-    align-self: flex-end;
-    margin-top: 1rem; }
   .projects #content {
     width: 40%;
     height: 40%;
     align-self: center; }
+  .projects #work-img {
+    width: 50%;
+    height: 50%; }
   .about-info {
-    justify-content: center;
-    width: 100%;
-    height: 100%; }
-    .about-info .bio {
-      width: 50%; }
+    justify-content: center; }
   #about {
     padding: 10rem; } }
 
@@ -321,8 +310,6 @@ main {
     main .title {
       line-height: 1;
       margin-bottom: 1rem; }
-  #about {
-    padding: 5rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -342,12 +329,13 @@ main {
       background: url(../img/Filip-Larsen-small.jpg);
       width: 150px;
       height: 150px; }
-  .about-info {
-    justify-content: center;
-    width: 100%;
-    height: 100%; }
-    .about-info .bio {
+  #about {
+    padding: 5rem; }
+    #about .about-info {
+      justify-content: center;
       width: 100%; }
+      #about .about-info .bio {
+        height: 100%; }
   .container .item {
     flex: 100%;
     align-self: center;
@@ -360,7 +348,22 @@ main {
   .projects #content {
     width: 100%;
     height: 100%;
-    align-self: center; } }
+    align-self: center; }
+  .projects #work-img {
+    width: 100%;
+    height: 100%; }
+  .container :nth-child(1) {
+    order: 1; }
+  .container :nth-child(2) {
+    order: 4; }
+  .container :nth-child(3) {
+    order: 2; }
+  .container :nth-child(4) {
+    order: 5; }
+  .container :nth-child(5) {
+    order: 3; }
+  .container :nth-child(6) {
+    order: 6; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -371,5 +374,18 @@ main {
     align-self: center;
     width: 100%;
     height: 100%; }
-  #about {
-    padding: 2rem; } }
+  .projects #work-img {
+    width: 100%;
+    height: 100%; }
+  .container :nth-child(1) {
+    order: 1; }
+  .container :nth-child(2) {
+    order: 4; }
+  .container :nth-child(3) {
+    order: 2; }
+  .container :nth-child(4) {
+    order: 5; }
+  .container :nth-child(5) {
+    order: 3; }
+  .container :nth-child(6) {
+    order: 6; } }

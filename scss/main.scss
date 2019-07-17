@@ -24,10 +24,8 @@
 }
 
 body {
-  @include background;
   background: $primary-color;
-  color: set-text-color($primary-color);
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -65,7 +63,7 @@ header {
 
 main {
   padding: 5rem;
-  //Sticky footer
+  height: 100vh;
 
   .icons {
     margin-top: 1rem;
@@ -82,9 +80,11 @@ main {
   .arrow {
     font-size: 3rem;
     color: $secondary-color;
-    margin-top: 18rem;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    padding-bottom: 1rem;
 
   }
   .bounce {
@@ -106,15 +106,16 @@ main {
 
 
   &#home {
+  @include background;
     h1 {
       margin-top: 20vh;
     }
   }
 }
 
+
 //jobs 
 #about{
-  background-color: $primary-color;
   padding: 15rem 15rem 3rem 15rem;
 }
 .about-info{
@@ -219,11 +220,6 @@ main {
   }
 }
 
-#main-footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 // Button styles
 .btn {
@@ -251,12 +247,5 @@ main {
   color: $secondary-color;
 }
 
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: $secondary-color;
-  color: set-text-color($secondary-color);
-  height: 60px;
-}
 
 @import "mobile";
