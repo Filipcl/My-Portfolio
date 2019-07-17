@@ -261,6 +261,9 @@ main {
       .boxes div:hover span {
         color: #F6F6F8; }
 
+.project-content {
+  padding-left: 3rem; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -301,7 +304,9 @@ main {
   .about-info {
     justify-content: center; }
   #about {
-    padding: 10rem; } }
+    padding: 10rem; }
+  #about-title {
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -330,7 +335,7 @@ main {
       width: 150px;
       height: 150px; }
   #about {
-    padding: 5rem; }
+    padding: 2rem; }
     #about .about-info {
       justify-content: center;
       width: 100%; }
