@@ -261,8 +261,17 @@ main {
       .boxes div:hover span {
         color: #F6F6F8; }
 
-.project-content {
-  padding-left: 3rem; }
+video {
+  height: 40%;
+  min-height: 40%;
+  width: 40%;
+  min-width: 40%; }
+
+.video_holder {
+  height: 40%;
+  min-height: 40%;
+  width: 40%;
+  min-width: 40%; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
