@@ -34,6 +34,27 @@
     }
  
   }
+    .project-content{
+      padding-left: 6rem;
+      padding-right: 6rem;
+    
+      .video_holder {
+        align-self: center;
+        padding: 0;
+        height: 60%;
+        width: 60%;
+        
+          &video {
+            height: 60%;
+            width: 60%;
+          }
+        }
+    }
+    
+    #ag{
+      font-size: 5rem;
+    }
+  
 
   .about-info{
     justify-content: center;
@@ -44,6 +65,7 @@
   #about-title{
     text-align: center;
   }
+
 }
 // Tablets
 @include mediaMd {
@@ -54,6 +76,10 @@
     .title {
       line-height: 1;
       margin-bottom: 1rem;
+      
+      &#ag{
+        font-size: 4rem;
+      }
     }
   }
 
@@ -122,6 +148,24 @@
     height: 100%;
   }
 }
+
+.project-content{
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  .video_holder {
+    align-self: center;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+      &video {
+        height: 100%;
+        width: 100%;
+      }
+    }
+}
+
 .container :nth-child(1) { order: 1; }
 .container :nth-child(2) { order: 4; }
 .container :nth-child(3) { order: 2; }
@@ -154,6 +198,22 @@
     height: 100%;
   }
 }
+.project-content{
+  padding: 0;
+  .video_holder {
+    align-self: center;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+      &video {
+        height: 100%;
+        width: 100%;
+      }
+    }
+}
+
+
 .container :nth-child(1) { order: 1; }
 .container :nth-child(2) { order: 4; }
 .container :nth-child(3) { order: 2; }
