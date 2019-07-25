@@ -1,63 +1,61 @@
 @import "config";
 
-*{
-    padding: 0;
-    list-style: none;
+* {
+  padding: 0;
+  list-style: none;
 }
 
-.skills{
-    width: 50%;
-    margin: 3rem auto;
+.skills {
+  width: 50%;
+  margin: 3rem auto;
 
-    .show-on-scroll{
-        @keyframes name{
-            0%{
-                width:0%;
-            }
-        }
+  .show-on-scroll {
+    @keyframes name {
+      0% {
+        width: 0%;
+      }
     }
+  }
 
-    li{
-        margin: 1rem 0;
-    }
+  li {
+    margin: 1rem 0;
+  }
 }
 
+.bar {
+  background: $primary-color;
+  display: block;
+  height: 6px;
+  box-shadow: 0 0 0.2rem $secondary-color;
 
-.bar{
-    background: $primary-color;
-    display: block;
+  span {
     height: 6px;
-    box-shadow: 0 0 0.2rem $secondary-color;
-    
-    span{
-        height: 6px;
-        float: left;
-        background: $secondary-color; 
-    }
-
+    float: left;
+    background: $secondary-color;
+  }
 }
 
-.html{
-    width: 90%;
-    animation: name 4s;
+.html {
+  width: 90%;
+  animation: name 4s;
 }
-.css{
-    width: 70%;
-    animation: name 4s;
+.css {
+  width: 70%;
+  animation: name 4s;
 }
-.javascript{
-    width: 50%;
-    animation: name 4s;
+.javascript {
+  width: 50%;
+  animation: name 4s;
 }
-.kotlin{
-    width: 70%;
-    animation: name 4s;
+.kotlin {
+  width: 70%;
+  animation: name 4s;
 }
-.java{
-    width: 85%;
-    animation: name 4s;
+.java {
+  width: 85%;
+  animation: name 4s;
 }
-.python{
-    width: 80%;
-    animation: name 4s;
+.python {
+  width: 80%;
+  animation: name 4s;
 }

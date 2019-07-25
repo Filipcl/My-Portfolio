@@ -36,53 +36,125 @@
         </ul>
       </nav>
     </header>
+    <div class="project-content">
+      <h1 class="title" id="spade-title">Spade</h1>
 
-    <main id="spade">
-        <h1 class="title" id="about-title">Spade</h1>
-        <div class="project-content">
-                <p>In association with the subject IN1060, user oriented design we were given a open project case, 
-                    my team and I choose the case about air quality in large cities in Norway. 
-                    Air quality and air pollution are an often topic in Norwegian media, 
-                    and we saw a need for information about air quality and how air quality affects us. 
-                    Caeli is an app that is designed to allow users in an easy and fast way to see the air quality in the desired geographical area in Norway in real time, 
-                    as well as for the previous and next 24 hours. 
-                    In addition, users can easily get information about health advice for different levels of pollution and for different user groups. 
-                    Caeli also allows users to customize the application according to their own personal preferences so that they can filter out information and services 
-                    they may find unnecessary or irrelevant. 
-                  </p>
-            
-                    <p>
-                    The name Caeli means "air" in Latin and refers both to a vision of developing an application whose 
-                      purpose is to show the air quality and hopefully contribute to awareness of air quality and how air pollution can affect own health and the environment.
-                      The application is developed in Android Studio with Kotlin as the programming language. 
-                      Displayed data uses an OkHttpClient that retrieves real-time measurements from pollution measurement stations in Norway that we get through the api.met.no. 
-                      We present the measurements against a desired geographical area that are taken from the geographical name register Kartverket.no/data. 
-                      The graphical user interface of the application is styled with the Markup language XML.         
-                      Through the project we followed the agile framework Scrum, we used Trello as backlog and Evetro during our retrospective meetings. 
-                      My role in the project was mainly as an interaction designer, the team concluded that everyone should participate in all possible stages of the process. 
-                      During the twelve weeks project work I had the role as a Scrum master and project owner several times, but most of my time was spent designing the Application's 
-                      activities in Kotlin and XML. I worked with the main interaction activity that displays data on specified locations, settings, notifications, health advice, 
-                      and general application design. 
-                    </p>
+      <p class="text">
+        This is a project in the subject IN1060 User-oriented design at the
+        University of Oslo. Our task was to plan and execute a project in which
+        we designed and built a tangible digital prototype (without the use of a
+        screen), for a selected user group. We chose public libraries as the
+        research domain and developed a digital prototype for the public
+        libraries' existing retrieval shelf solution.
+      </p>
 
-                    <p>
-                    As an interaction designer, my work tasks were gaining insight and collecting data from users. In collaboration with the other two interaction designers, 
-                    we collected data from different user groups like; asthmatics, cyclists and general population using semi-structured interviews. 
-                    We design and held user tests iteratively at new increments on our prototype, with the goal of uncovering the needs of the users. 
-                    This gave us the ability to design user stories, identify functional and non-functional requirements, which led to a good backlog for the development of the application. 
-                    The project work was very exciting and educational. I am left with an understanding of the importance and process of 
-                    using agile development methodology such as the Scrum framework and the importance of a good group dynamics. 
-                    It was rewarding to try native development in Android studios with a relatively new programming language like Kotlin.
-                  </p>
-
+      <p class="text">
+        The project focused mainly on UX-design but with a user-oriented design
+        angle, where the users were in focus. To gain insight into the early
+        phase, we conducted observations at the various public libraries as well
+        as in-depth interviews with domain experts about existing solution at
+        the libraries. Next, we conducted semi-structured interviews and
+        presentation of sketches to a selected user group. After interviewing
+        domain experts for the second time, we concluded based on users' needs
+        to develop a digital solution for the existing solution when retrieving
+        books.
+      </p>
+      <div class="ag-image">
+          <img
+            id="ag-img"
+            src="./img/documents/AG-Varmeteknikk.png"
+            alt="AG-Varmeteknikk-image"
+          />
         </div>
-        <div class="boxes">
-            <div>
-              <a class="text-secondary" href="work.html"><span>Back</span></a>
-            </div>
-          </div>
-
-    </main>
+     
+      <p class="text">
+        The project consisted of seven iterations, we designed a modular
+        prototype that allowed us to add new functionality and modify the
+        prototype each iteration. An iteration of the project consisted of
+        development of the prototype based on user needs, which we obtained
+        during user testing. We had a selected user group, who followed us
+        throughout the project. Each iteration was completed with an evaluation
+        of the iterations prototype together with the user group.
+      </p>
+      <div class="ag-image">
+          <img
+            id="ag-img"
+            src="./img/documents/AG-Varmeteknikk.png"
+            alt="AG-Varmeteknikk-image"
+          />
+        </div>
+           <p class="text">
+        My role in this project was technically responsible, it involves writing
+        the code for the technical solution. The solution is developed with the
+        Arduino Uno microcontroller, the code is written in Arduino's own
+        programming language, with a syntax who looks something like a crossing
+        between Java and C++. As I had no experience with Arduino it brought
+        with it some challenges, like knowing if an error was programmatic or
+        hardware related. Besides the coding I have connected the entire circuit
+        that makes up the solution. Furthermore, in line with the other members
+        of the group, I conducted observations, data collection in the form of
+        interviews and user tests iteratively.
+      </p>
+      <div class="ag-image">
+          <img
+            id="ag-img"
+            src="./img/documents/AG-Varmeteknikk.png"
+            alt="AG-Varmeteknikk-image"
+          />
+        </div>
+ 
+      <p class="text">
+        The final prototype design is a standard shelf equipped with two RFID
+        readers, one reader integrated into the bookshelf partition and reading
+        the book ID, as all the books at the libraries has individually
+        RFID-tags. The second RFID reader is a card reader that reads the RFID
+        card ID (which is to illustrate a loan card), the card reader is
+        equipped with a led strip that flashes green if your book is in the
+        shelf and red if it is not there. If the book is in the shelf and the
+        correct loan card is registered, an LED strip light’s up which shelf
+        section the book is in.
+      </p>
+      <p class="text">
+        Main components in the prototype:
+        <li>
+          • 3 pcs of Arduino Uno.
+        </li>
+        <li>
+          • 2 MFRC522 RFID readers.
+        </li>
+        <li>
+          • 2 pcs power banks.
+        </li>
+        • Luxorparts Addressable RGB LED strip 5 m.
+        <li></li>
+        <li>
+          • NeoPixel Stick 8 - 8X 5050 RGB LED addressable-RGB LED rod.
+        </li>
+        <li>
+          • 2 Electrolytic Capacitor.
+        </li>
+        <li>
+          • 2 pcs 220Ω resistor for RGB LED strip.
+        </li>
+      </p>
+      <p class="text">
+        The project work was on my second semester of my study, it was a lot of
+        fun to be thrown into such a project. The team had very few
+        relationships with such work, and it was educational to have such
+        user-involved approach. I learned a lot about data collection, data
+        analysis and user testing as well as how to work together in a team on a
+        project. The role as technical responsible presented several challenges,
+        especially getting three Arduino’s and two RFID readers to interact. The
+        project was very motivating, and I learned a lot of programming, and
+        about the power of using a microcontroller as a prototyping tool in
+        UX-designing.
+      </p>
+    </div>
+    <div class="boxes">
+      <div>
+        <a class="text-secondary" href="work.html"><span>Back</span></a>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>
