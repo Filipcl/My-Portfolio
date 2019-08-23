@@ -2,13 +2,16 @@
   "name": "myapp",
   "version": "1.0.0",
   "description": "Portfolio website",
+  "homepage": "http://Filipcl.github.io/My-Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o components/css/ --recursive"
+    "sass": "node-sass -w scss/ -o components/css/ --recursive",
+    "deploy":"gh-pages -d components"
   },
   "author": "Filip Christoffer Larsen",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0"
   }
 }
