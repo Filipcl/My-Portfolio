@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spade</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="scroll">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="project-content">
+      <h1 class="title" id="spade-title">Spade</h1>
+
+      <p class="text">
+        This is a project in the subject IN1060 User-oriented design at my second semester at the
+        University of Oslo.  
+        Our task was to plan and execute a project in which
+        we designed and built a tangible digital prototype (without the use of a
+        screen), for a selected user group. We chose public libraries as the
+        research domain and developed a digital prototype for the public
+        libraries' existing retrieval shelf solution.
+      </p>
+
+      <p class="text">
+        The project focused mainly on UX-design but with a user-oriented design
+        angle, where the users were in focus. To gain insight into the early
+        phase, we conducted observations at the various public libraries as well
+        as in-depth interviews with domain experts about existing solution at
+        the libraries. Next, we conducted semi-structured interviews and
+        presentation of sketches to a selected user group. After interviewing
+        domain experts for the second time, we concluded based on users' needs
+        to develop a digital solution for the existing solution when retrieving
+        books.
+      </p>
+      <div class="ag-image">
+          <img
+            id="ag-img"
+            src="./img/documents/skisseer.png"
+            alt="AG-Varmeteknikk-image"
+          />
+        </div>
+        <q  style="font-style: italic">Sketches of the book retrieving system.</q>
+   
+     
+      <p class="text">
+        The project consisted of seven iterations, we designed a modular
+        prototype that allowed us to add new functionality and modify the
+        prototype each iteration. An iteration of the project consisted of
+        development of the prototype based on user needs, which we obtained
+        during user testing. We had a selected user group, who followed us
+        throughout the project. Each iteration was completed with an evaluation
+        of the iterations prototype together with the user group.
+      </p>
+      <div class="ag-image">
+          <img
+            id="ag-img"
+            src="./img/documents/evaluering.png"
+            alt="AG-Varmeteknikk-image"
+          />
+        </div>
+        <q  style="font-style: italic">Evaluation with user group.</q>
+
+           <p class="text">
+        My role in this project was technically responsible, it involves writing
+        the code for the technical solution. The solution is developed with the
+        Arduino Uno microcontroller, the code is written in Arduino's own
+        programming language, with a syntax who looks something like a crossing
+        between Java and C++. As I had no experience with Arduino it brought
+        with it some challenges, like knowing if an error was programmatic or
+        hardware related. Besides the coding I have connected the entire circuit
+        that makes up the solution. Furthermore, in line with the other members
+        of the group, I conducted observations, data collection in the form of
+        interviews and user tests iteratively.
+      </p>
+      <div class="ag-image">
+          <img
+            id="ag-img"
+            src="./img/documents/Prototype.png"
+            alt="AG-Varmeteknikk-image"
+          />
+        </div>
+        <q  style="font-style: italic">Final prototype.</q>
+
+ 
+      <p class="text">
+        The final prototype design is a standard shelf equipped with two RFID
+        readers, one reader integrated into the bookshelf partition and reading
+        the book ID, as all the books at the libraries has individually
+        RFID-tags. The second RFID reader is a card reader that reads the RFID
+        card ID (which is to illustrate a loan card), the card reader is
+        equipped with a led strip that flashes green if your book is in the
+        shelf and red if it is not there. If the book is in the shelf and the
+        correct loan card is registered, an LED strip light’s up which shelf
+        section the book is in.
+      </p>
+      <div class="text">
+      <p>
+        Main components in the prototype:
+        <li>
+          • 3 pcs of Arduino Uno.
+        </li>
+        <li>
+          • 2 MFRC522 RFID readers.
+        </li>
+        <li>
+          • 2 pcs power banks.
+        </li>
+        • Luxorparts Addressable RGB LED strip 5 m.
+        <li></li>
+        <li>
+          • NeoPixel Stick 8 - 8X 5050 RGB LED addressable-RGB LED rod.
+        </li>
+        <li>
+          • 2 Electrolytic Capacitor.
+        </li>
+        <li>
+          • 2 pcs 220Ω resistor for RGB LED strip.
+        </li>
+      </p>
+    </div>
+    <div class="ag-image">
+      <img
+        id="ag-img"
+        src="./img/documents/Hovedkrets.png"
+        alt="AG-Varmeteknikk-image"
+      />
+    </div>
+    <q  style="font-style: italic">Prototype circuit. </q>
+
+      <p class="text">
+        It was a lot of
+        fun to be thrown into such a project. It was educational to have such
+        user-involved approach and I learned a lot about data collection, data
+        analysis and user testing as well as how to work together in a team on a
+        project. The role as technical responsible presented several challenges,
+        especially getting three Arduino’s and two RFID readers to interact. The
+        project was very motivating, and I learned a lot of programming, and
+        about the power of using a microcontroller as a prototyping tool in
+        UX-designing.
+      </p>
+
+      <p>
+        Here's the link to our project site :
+        <a
+          class="text-secondary"
+          href="https://www.uio.no/studier/emner/matnat/ifi/IN1060/v18/prosjekter-2018/spade/index.html" 
+          target="_blank"
+          style="text-decoration: underline"
+        >
+          Project site</a
+        >
+      </p>
+    </div>
+    <div class="boxes">
+      <div>
+        <a class="text-secondary" href="work.html"><span>Back</span></a>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

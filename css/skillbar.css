@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  list-style: none; }
+
+.skills {
+  width: 50%;
+  margin: 3rem auto; }
+
+@keyframes name {
+  0% {
+    width: 0%; } }
+  .skills li {
+    margin: 1rem 0; }
+
+.bar {
+  background: #F6F6F8;
+  display: block;
+  height: 6px;
+  box-shadow: 0 0 0.2rem #605D58; }
+  .bar span {
+    height: 6px;
+    float: left;
+    background: #605D58; }
+
+.html {
+  width: 90%;
+  animation: name 4s; }
+
+.css {
+  width: 70%;
+  animation: name 4s; }
+
+.javascript {
+  width: 50%;
+  animation: name 4s; }
+
+.kotlin {
+  width: 70%;
+  animation: name 4s; }
+
+.java {
+  width: 85%;
+  animation: name 4s; }
+
+.python {
+  width: 80%;
+  animation: name 4s; }
