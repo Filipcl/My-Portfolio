@@ -481,6 +481,9 @@ main {
     order: 6; } }
 
 @media screen and (max-width: 500px) {
+  main#Work{
+    padding: 1rem;
+  }
   main#home h1 {
     margin-top: 12vh; }
   main .title {
