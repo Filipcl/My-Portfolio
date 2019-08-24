@@ -6,12 +6,14 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o components/css/ --recursive",
-    "deploy":"gh-pages -d components"
+    "deploy": "gh-pages -d components"
   },
   "author": "Filip Christoffer Larsen",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^2.1.1",
-    "node-sass": "^4.12.0"
+    "node": "^12.9.0",
+    "node-sass": "^4.12.0",
+    "sass": "^1.22.10"
   }
 }

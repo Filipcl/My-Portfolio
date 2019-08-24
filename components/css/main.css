@@ -410,6 +410,8 @@ main {
       margin-bottom: 1rem; }
       main .title#ag {
         font-size: 4rem; }
+  main#Work {
+    padding: 1rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -481,6 +483,8 @@ main {
     order: 6; } }
 
 @media screen and (max-width: 500px) {
+  main#Work {
+    padding: 1rem; }
   main#home h1 {
     margin-top: 12vh; }
   main .title {

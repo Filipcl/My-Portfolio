@@ -60,7 +60,6 @@
   main {
     align-items: center;
     text-align: center;
-
     .title {
       line-height: 1;
       margin-bottom: 1rem;
@@ -69,6 +68,9 @@
         font-size: 4rem;
       }
     }
+  }
+  main#Work{
+    padding: 1rem;    
   }
 
   ul.menu-nav,
@@ -178,6 +180,9 @@
 //Smartphone
 
 @include mediaSm {
+  main#Work{
+    padding: 1rem;
+  }
   main#home h1 {
     margin-top: 12vh;
   }
@@ -191,6 +196,7 @@
       width: 100%;
       height: 100%;
     }
+
     #work-img {
       width: 100%;
       height: 100%;
