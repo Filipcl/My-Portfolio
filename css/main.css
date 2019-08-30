@@ -488,6 +488,9 @@ main {
     margin-top: 12vh; }
   main .title {
     font-size: 5rem; }
+    #about {
+    padding: 0rem 2rem 2rem;
+  }
   .projects .item {
     align-self: center;
     width: 100%;
