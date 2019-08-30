@@ -484,6 +484,9 @@ main {
   main#Work{
     padding: 1rem;
   }
+  main#Work .title{
+    font-size: 3rem;
+  }
   main#home{
     padding:2rem;
   }
