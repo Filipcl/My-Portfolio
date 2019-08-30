@@ -484,8 +484,11 @@ main {
   main#Work{
     padding: 1rem;
   }
+  main#home{
+    padding:2rem;
+  }
   main#home h1 {
-    margin-top: 12vh; }
+    margin-top: 10vh; }
   main .title {
     font-size: 5rem; }
     #about {
