@@ -216,6 +216,7 @@ main {
     transform: translateY(-15px); } }
   main#home#home {
     background: url(../img/goran-ivos-246271-unsplash.jpg);
+    overflow: hidden;
     background-attachment: fixed;
     background-size: cover;
     opacity: 0.9; }
