@@ -201,8 +201,8 @@ main {
     color: #605D58;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    right: 50%;
+    left: 0;
+    right: 0;
     padding-bottom: 1rem; }
   main .bounce {
     animation: bounce 2s infinite; }
@@ -373,7 +373,10 @@ main {
     align-self: center; }
   .projects #work-img {
     width: 40%;
-    height: 40%; } }
+    height: 40%; }
+  main .arrow{
+    left: 50%;
+  }}
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects #content {
@@ -385,6 +388,10 @@ main {
     height: 50%; }
   .about-info {
     justify-content: center; }
+  
+  main .arrow{
+    left: 50%;
+  }
   #about {
     padding: 10rem; }
   #about-title {
