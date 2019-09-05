@@ -116,27 +116,27 @@
 
 .html {
   width: 90%;
-  animation: name 4s; }
+  animation: name 5s; }
 
 .css {
   width: 70%;
-  animation: name 4s; }
+  animation: name 5s; }
 
 .javascript {
   width: 50%;
-  animation: name 4s; }
+  animation: name 5s; }
 
 .kotlin {
   width: 70%;
-  animation: name 4s; }
+  animation: name 5s; }
 
 .java {
   width: 85%;
-  animation: name 4s; }
+  animation: name 5s; }
 
 .python {
   width: 80%;
-  animation: name 4s; }
+  animation: name 5s; }
 
 * {
   box-sizing: border-box; }
