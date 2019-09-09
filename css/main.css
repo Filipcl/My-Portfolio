@@ -201,8 +201,7 @@ main {
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
-    padding-bottom: 1rem; }
+    right: 0; }
   main .bounce {
     animation: bounce 2s infinite; }
 
